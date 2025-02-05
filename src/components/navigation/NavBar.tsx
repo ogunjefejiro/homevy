@@ -1,4 +1,5 @@
 import { Button } from "@heroui/react"
+import { HiMenuAlt3 } from "react-icons/hi"
 
 import { useEffect, useState } from "react"
 
@@ -10,15 +11,10 @@ import { navLinks } from "@/utils/constants"
 import Logo from "../common/Logo"
 
 const NavBar = () => {
-   // const [menuOpen, setMenuOpen] = useState(false)
-   const [pageReady, setPageReady] = useState(false)
    const [scroll, setScroll] = useState(false)
 
    const pageLink = usePathname()
 
-   useEffect(() => {
-      setPageReady(true)
-   }, [])
    useEffect(() => {
       if (typeof window !== "undefined") {
          window.addEventListener("scroll", () => setScroll(window.scrollY > 200))
@@ -38,7 +34,7 @@ const NavBar = () => {
                <nav className="hidden lg:block">
                   <ul className="flex gap-12 items-center">
                      {navLinks?.map((item) => (
-                        <li className="" key={item.title}>
+                        <li key={item.title}>
                            <Link
                               href={item.path}
                               className={`${
@@ -65,20 +61,7 @@ const NavBar = () => {
                </nav>
             </div>
 
-            {/* mobile menu start */}
-            {/* <MenuAlt3Icon
-               className={`lg:hidden w-9 text-primary cursor-pointer`}
-               onClick={() => setMenuOpen(true)}
-            />
-            <motion.div
-               initial={false}
-               animate={{ opacity: menuOpen ? 1 : 0, scale: menuOpen ? 1 : 0 }}
-               transition={{ duration: 0.5 }}
-               className="fixed top-0 left-0 right-0 bottom-0 bg-primary bg-opacity-95 h-screen text-center overflow-y-scroll z-[99999] lg:hidden"
-               onClick={(e) => e.stopPropagation()}>
-               <MobileNavbar setMenuOpen={setMenuOpen} pageLink={pageLink} />
-            </motion.div> */}
-            {/* mobile menu end */}
+            <HiMenuAlt3 className="lg:hidden text-4xl text-primary cursor-pointer" />
          </div>
       </header>
    )
