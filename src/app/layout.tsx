@@ -13,7 +13,7 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-   title: "Homevy",
+   title: "Boldo",
    description: "Blog App",
 }
 

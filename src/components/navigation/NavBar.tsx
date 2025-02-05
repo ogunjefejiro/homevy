@@ -26,7 +26,7 @@ const NavBar = () => {
    }, [])
 
    return (
-      <header className={` transition-all duration-300 sticky top-0 z-[9999] bg-white ${scroll ? "shadow" : ""}`}>
+      <header className={`transition-all duration-300 sticky top-0 z-[9999] bg-white ${scroll ? "border-b" : ""}`}>
          <div
             className={`flex justify-between items-center py-3 text-black transition-all duration-300 ${
                scroll ? "md:py-4" : "md:py-6"

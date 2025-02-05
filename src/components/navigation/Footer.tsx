@@ -8,7 +8,7 @@ import Logo from "../common/Logo"
 
 const Footer = () => {
    return (
-      <footer className="py-10 lg:py-20 grid grid-cols-1 md:grid-cols-2 lg:flex gap-6 lg:gap-12 justify-between">
+      <footer className="py-10 lg:pb-24 lg:pt-32 grid grid-cols-1 md:grid-cols-2 lg:flex gap-6 lg:gap-12 justify-between">
          <div className="w-full text-[#fdf9ee] text-base md:mr-0 lg:mr-24">
             <Logo />
 
