@@ -1,5 +1,6 @@
 "use client"
 
+import { manrope } from "@/app/fonts"
 import { Card, CardBody, Image, User } from "@heroui/react"
 import { motion } from "framer-motion"
 
@@ -12,10 +13,10 @@ const FeaturedBlog = () => {
          initial={{ opacity: 0, y: -50 }}
          whileInView={{ opacity: 1, y: 0 }}
          transition={{ duration: 0.8 }}
-         className="py-8 sm:pt-10 sm:pb-16 border-b border-primary text-center"
+         className={`py-8 sm:pt-10 sm:pb-16 border-b border-primary text-center ${manrope.variable}`}
       >
          <p className="text-xl">Blog</p>
-         <h1 className="mt-6 mb-8 sm:mt-8 sm:mb-12 text-5xl sm:text-6xl">Thoughts and words</h1>
+         <h1 className={`mt-6 mb-8 sm:mt-8 sm:mb-12 text-5xl sm:text-6xl manrope`}>Thoughts and words</h1>
 
          <Card isPressable disableRipple shadow="none" className="text-primary">
             <CardBody className="overflow-visible p-0 grid sm:grid-cols-2 items-center gap-6 lg:gap-10 xl:gap-20">
@@ -33,7 +34,7 @@ const FeaturedBlog = () => {
                      <p className="text-paragraph">November 22, 2021</p>
                   </div>
 
-                  <h3 className="text-3xl lg:text-5xl max-w-screen-sm leading-10 lg:leading-[72px]">
+                  <h3 className="text-3xl lg:text-5xl max-w-screen-sm leading-10 lg:leading-[72px] manrope">
                      Pitch termsheet backing validation focus release.
                   </h3>
 
@@ -43,7 +44,7 @@ const FeaturedBlog = () => {
                         size: "sm",
                      }}
                      name="Chandler Bing"
-                     classNames={{ name: "text-base" }}
+                     classNames={{ name: "text-base text-black" }}
                   />
                </div>
             </CardBody>

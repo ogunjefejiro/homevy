@@ -1,5 +1,6 @@
 "use client"
 
+import { manrope } from "@/app/fonts"
 import { Button } from "@heroui/react"
 import { motion } from "framer-motion"
 
@@ -22,9 +23,9 @@ const LatestNews = () => {
          initial={{ opacity: 0, y: -50 }}
          whileInView={{ opacity: 1, y: 0 }}
          transition={{ duration: 0.8 }}
-         className="max-w-screen-xl mx-auto"
+         className={`max-w-screen-xl mx-auto ${manrope.variable}`}
       >
-         <h2 className="text-4xl sm:text-5xl mb-8">Latest News</h2>
+         <h2 className="text-4xl sm:text-5xl mb-8 manrope">Latest News</h2>
 
          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8 sm:gap-y-14">
             {news.slice(0, pageSize).map((item) => (

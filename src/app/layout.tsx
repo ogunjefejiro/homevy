@@ -2,15 +2,8 @@ import AppLayout from "@/layouts/AppLayout"
 
 import type { Metadata } from "next"
 
-import { Open_Sans } from "next/font/google"
-
+import { openSans } from "./fonts"
 import "./globals.css"
-
-const openSans = Open_Sans({
-   subsets: ["latin"],
-   weight: ["400", "500", "600", "700"],
-   display: "swap",
-})
 
 export const metadata: Metadata = {
    title: "Boldo",
