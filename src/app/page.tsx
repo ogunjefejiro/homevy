@@ -6,7 +6,7 @@ import GetStartedCTA from "@/components/common/GetStartedCTA"
 
 const Home = () => {
    return (
-      <div className="space-y-20">
+      <div className="space-y-12 sm:space-y-20">
          <FeaturedBlog />
          <LatestNews />
          <GetStartedCTA />

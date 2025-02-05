@@ -17,16 +17,16 @@ const LatestNews = () => {
 
    return (
       <div className="max-w-screen-xl mx-auto">
-         <h2 className="text-5xl mb-8">Latest News</h2>
+         <h2 className="text-4xl sm:text-5xl mb-8">Latest News</h2>
 
-         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
+         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8 sm:gap-y-14">
             {news.slice(0, pageSize).map((item) => (
                <LatestNewsCard key={item.id} {...item} />
             ))}
          </div>
 
          {pageSize < news.length && (
-            <div className="flex justify-center mt-16">
+            <div className="flex justify-center mt-8 sm:mt-16">
                <Button
                   variant="bordered"
                   color="primary"

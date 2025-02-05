@@ -6,12 +6,12 @@ import React from "react"
 
 const FeaturedBlog = () => {
    return (
-      <main className="pt-10 pb-16 border-b border-primary text-center">
+      <main className="py-8 sm:pt-10 sm:pb-16 border-b border-primary text-center">
          <p className="text-xl">Blog</p>
-         <h1 className="mt-8 mb-12 text-6xl">Thoughts and words</h1>
+         <h1 className="mt-6 mb-8 sm:mt-8 sm:mb-12 text-5xl sm:text-6xl">Thoughts and words</h1>
 
          <Card isPressable disableRipple shadow="none" className="text-primary">
-            <CardBody className="overflow-visible p-0 grid sm:grid-cols-2 items-center gap-8 lg:gap-10 xl:gap-20">
+            <CardBody className="overflow-visible p-0 grid sm:grid-cols-2 items-center gap-6 lg:gap-10 xl:gap-20">
                <Image
                   alt="Featured news"
                   className="w-full object-cover h-auto rounded-xl"
@@ -20,7 +20,7 @@ const FeaturedBlog = () => {
                   width="100%"
                />
 
-               <div className="space-y-5 xl:space-y-8">
+               <div className="space-y-3 sm:space-y-5 xl:space-y-8">
                   <div className="flex items-center gap-4">
                      <p className="font-bold">Category</p>
                      <p className="text-paragraph">November 22, 2021</p>

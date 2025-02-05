@@ -19,10 +19,10 @@ type Props = {
 const LatestNewsCard: React.FC<Props> = (props) => {
    return (
       <Card isPressable disableRipple shadow="none" className="text-primary">
-         <CardBody className="overflow-visible p-0 space-y-4">
+         <CardBody className="overflow-visible p-0 space-y-3 sm:space-y-4">
             <Image
                alt={props.title}
-               className="w-full object-cover h-[300px] rounded-xl"
+               className="w-full object-cover h-[250px] sm:h-[300px] rounded-xl"
                shadow="none"
                src={props.coverImage}
                width="100%"
@@ -33,10 +33,10 @@ const LatestNewsCard: React.FC<Props> = (props) => {
                <p className="text-paragraph">{props.date}</p>
             </div>
 
-            <h3 className="text-xl">{props.title}</h3>
+            <h3 className="text-lg sm:text-xl">{props.title}</h3>
          </CardBody>
 
-         <CardFooter className="text-small justify-between px-0 pt-5">
+         <CardFooter className="text-small justify-between px-0 pt-3 sm:pt-5">
             <User
                avatarProps={{
                   src: props.user.avatar,
