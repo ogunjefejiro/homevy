@@ -51,7 +51,7 @@ const NavBar = () => {
                                     color="primary"
                                     size="lg"
                                     radius="full"
-                                    className="px-8 font-semibold"
+                                    className="px-12 font-semibold"
                                  >
                                     {item.title}
                                  </Button>
