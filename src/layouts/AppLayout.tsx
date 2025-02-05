@@ -5,12 +5,12 @@ import { HeroUIProvider } from "@heroui/react"
 import React from "react"
 
 import Footer from "@/components/navigation/Footer"
-import TopBar from "@/components/navigation/TopBar"
+import NavBar from "@/components/navigation/NavBar"
 
 const AppLayout = ({ children }: { children: React.ReactNode }) => {
    return (
       <HeroUIProvider>
-         <TopBar />
+         <NavBar />
          {children}
          <Footer />
       </HeroUIProvider>

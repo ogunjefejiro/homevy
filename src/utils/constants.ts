@@ -1,3 +1,11 @@
+export const navLinks = [
+   { path: "#", title: "Product" },
+   { path: "#", title: "Services" },
+   { path: "#", title: "About" },
+
+   { path: "#", title: "Log In", featured: true },
+]
+
 export const footerLinks = [
    {
       heading: "Landings",
