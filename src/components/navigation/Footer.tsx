@@ -28,7 +28,7 @@ const Footer = () => {
                      <Link
                         key={i}
                         href={item.path}
-                        className="cursor-pointer text-paragraph flex items-center gap-3 w-fit"
+                        className="cursor-pointer text-paragraph hover:text-secondary flex items-center gap-3 w-fit duration-300 transition-colors"
                      >
                         {item.title}{" "}
                         {item.tag && (
