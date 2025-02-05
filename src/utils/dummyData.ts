@@ -2,7 +2,7 @@ export const news = [
    {
       id: 1,
       coverImage: "/images/news-1.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Pitch termsheet backing validation focus release.",
       user: {
@@ -13,7 +13,7 @@ export const news = [
    {
       id: 2,
       coverImage: "/images/news-2.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
       user: {
@@ -24,7 +24,7 @@ export const news = [
    {
       id: 3,
       coverImage: "/images/news-3.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
       user: {
@@ -35,7 +35,7 @@ export const news = [
    {
       id: 4,
       coverImage: "/images/news-4.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Pitch termsheet backing validation focus release.",
       user: {
@@ -46,7 +46,7 @@ export const news = [
    {
       id: 5,
       coverImage: "/images/news-5.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
       user: {
@@ -57,7 +57,7 @@ export const news = [
    {
       id: 6,
       coverImage: "/images/news-6.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
       user: {
@@ -68,7 +68,7 @@ export const news = [
    {
       id: 7,
       coverImage: "/images/news-1.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Pitch termsheet backing validation focus release.",
       user: {
@@ -79,7 +79,7 @@ export const news = [
    {
       id: 8,
       coverImage: "/images/news-2.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
       user: {
@@ -90,7 +90,7 @@ export const news = [
    {
       id: 9,
       coverImage: "/images/news-3.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
       user: {
@@ -101,7 +101,7 @@ export const news = [
    {
       id: 10,
       coverImage: "/images/news-4.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Pitch termsheet backing validation focus release.",
       user: {
@@ -112,7 +112,7 @@ export const news = [
    {
       id: 11,
       coverImage: "/images/news-5.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
       user: {
@@ -123,7 +123,7 @@ export const news = [
    {
       id: 12,
       coverImage: "/images/news-6.png",
-      category: "Media",
+      category: "Category",
       date: "November 22, 2021",
       title: "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
       user: {

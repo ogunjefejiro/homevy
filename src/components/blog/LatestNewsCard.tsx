@@ -18,7 +18,7 @@ type Props = {
 
 const LatestNewsCard: React.FC<Props> = (props) => {
    return (
-      <Card isPressable shadow="none" onPress={() => console.log("press")} className="text-primary">
+      <Card isPressable disableRipple shadow="none" className="text-primary">
          <CardBody className="overflow-visible p-0 space-y-4">
             <Image
                alt={props.title}
