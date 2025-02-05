@@ -1,4 +1,5 @@
 import { Chip } from "@heroui/react"
+import { motion } from "framer-motion"
 
 import Link from "next/link"
 
@@ -8,7 +9,13 @@ import Logo from "../common/Logo"
 
 const Footer = () => {
    return (
-      <footer className="py-10 lg:pb-24 lg:pt-32 grid grid-cols-1 md:grid-cols-2 lg:flex gap-6 lg:gap-12 justify-between">
+      <motion.footer
+         viewport={{ once: true }}
+         initial={{ opacity: 0, y: -50 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.8 }}
+         className="py-10 lg:pb-24 lg:pt-32 grid grid-cols-1 md:grid-cols-2 lg:flex gap-6 lg:gap-12 justify-between"
+      >
          <div className="w-full text-[#fdf9ee] text-base md:mr-0 lg:mr-24">
             <Logo />
 
@@ -41,7 +48,7 @@ const Footer = () => {
                </div>
             </div>
          ))}
-      </footer>
+      </motion.footer>
    )
 }
 

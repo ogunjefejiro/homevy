@@ -1,12 +1,19 @@
 "use client"
 
 import { Card, CardBody, Image, User } from "@heroui/react"
+import { motion } from "framer-motion"
 
 import React from "react"
 
 const FeaturedBlog = () => {
    return (
-      <main className="py-8 sm:pt-10 sm:pb-16 border-b border-primary text-center">
+      <motion.main
+         viewport={{ once: true }}
+         initial={{ opacity: 0, y: -50 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.8 }}
+         className="py-8 sm:pt-10 sm:pb-16 border-b border-primary text-center"
+      >
          <p className="text-xl">Blog</p>
          <h1 className="mt-6 mb-8 sm:mt-8 sm:mb-12 text-5xl sm:text-6xl">Thoughts and words</h1>
 
@@ -41,7 +48,7 @@ const FeaturedBlog = () => {
                </div>
             </CardBody>
          </Card>
-      </main>
+      </motion.main>
    )
 }
 

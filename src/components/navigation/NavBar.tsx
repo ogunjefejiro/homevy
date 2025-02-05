@@ -1,4 +1,5 @@
 import { Button, Drawer, DrawerContent, useDisclosure } from "@heroui/react"
+import { motion } from "framer-motion"
 import { HiMenuAlt3 } from "react-icons/hi"
 
 import React from "react"
@@ -21,7 +22,13 @@ const NavBar = () => {
    }, [])
 
    return (
-      <header className={`transition-all duration-300 sticky top-0 z-[20] bg-white ${scroll ? "border-b" : ""}`}>
+      <motion.header
+         viewport={{ once: true }}
+         initial={{ opacity: 0 }}
+         whileInView={{ opacity: 1 }}
+         transition={{ duration: 0.8 }}
+         className={`transition-all duration-300 sticky top-0 z-[20] bg-white ${scroll ? "border-b" : ""}`}
+      >
          <div
             className={`flex justify-between items-center py-3 text-black transition-all duration-300 ${
                scroll ? "md:py-4" : "md:py-6"
@@ -62,7 +69,7 @@ const NavBar = () => {
          <Drawer placement="left" isOpen={isOpen} onOpenChange={onOpenChange} className="max-w-[300px]">
             <DrawerContent>{(onClose) => <MobileSidebar onClose={onClose} />}</DrawerContent>
          </Drawer>
-      </header>
+      </motion.header>
    )
 }
 
